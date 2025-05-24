@@ -1,218 +1,238 @@
- * {
-     margin: 0;
-     padding: 0;
- }
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
- body {
-     background-color: rgb(15, 0, 33);
-     color: white;
-     font-family: 'Poppins', sans-serif;
- }
+body {
+    background-color: rgb(15, 0, 33);
+    color: white;
+    font-family: 'Poppins', sans-serif;
+}
 
- nav {
-     display: flex;
-     justify-content: space-around;
-     align-items: center;
-     height: 100px;
-     background-color: rgb(69, 22, 117);
- }
-
- nav ul {
-     display: flex;
-     justify-content: center;
-
- }
-
- nav ul li {
-     list-style: none;
-     margin: 0 23px;
- }
-
- nav ul li a {
-     text-decoration: none;
-     color: white;
- }
-
- nav ul li a:hover {
-     color: aqua;
-     font-size: 1.01rem;
- }
-
- .left {
-     font-size: 2rem;
- }
-
- .firstsection {
-     display: flex;
-     justify-content: space-around;
-     align-items: center;
-     margin: 80px 0;
- }
-
- .firstsection>div {
-     width: 30%;
- }
-
- .leftsection {
-     font-size: 1.5rem;
- }
-
- .leftsecabout {
-     font-size: 2rem;
-     height: 60px;
- }
-
- .rightsection img {
-     width: 80%;
-     margin: 50px 0;
- }
-
- .purple {
-     color: rgb(135, 75, 192);
- }
-
- .secondsection {
-     max-width: 80vw;
-     margin: auto;
- }
-
- .skill {
-     font-size: 2rem;
- }
-
- .gap {
-     margin-bottom: 15px;
- }
-
- .list {
-     font-size: 1.5rem;
- }
-
- .thirdsection {
-     max-width: 80vw;
-     margin: auto;
- }
-
- .pro {
-     margin-top: 175px;
-     font-size: 2rem;
- }
-
- .gap2 {
-     margin-bottom: 20px;
- }
-
- .project {
-     font-size: 1.5rem;
-     max-width: 80vw;
-     margin: auto;
-     background: rgb(110, 0, 118);
-     color: rgb(255, 255, 255);
-     padding: 1rem;
-     border-left: 15px solid rgb(69, 22, 117);
- }
-
- .project a:link {
-     color: aqua;
- }
-
- .project a:visited {
-     color: yellow;
- }
-
- .project a:hover {
-     color: rgb(215, 59, 176);
- }
-
- .email a:link {
-     color: aqua;
- }
-
- .email a:visited {
-     color: yellow;
- }
-
- .email a:hover {
-     color: rgb(215, 59, 176);
- }
-
- .mob a:link {
-     color: aqua;
- }
-
- .mob a:visited {
-     color: yellow;
- }
-
- .mob a:hover {
-     color: rgb(215, 59, 176);
- }
-
- .git a:link {
-     color: aqua;
- }
-
- .git a:visited {
-     color: yellow;
- }
-
- .git a:hover {
-     color: rgb(215, 59, 176);
- }
-
-
- .fourthsection {
-     max-width: 80vw;
-     margin: auto;
- }
-
- .contact {
-     margin-top: 175px;
-     font-size: 2rem;
- }
-
- .gap3 {
-     margin-bottom: 16px;
- }
-
- .email {
-     font-size: 1.5rem;
-     margin-bottom: 12px;
- }
-
- .mob {
-     font-size: 1.5rem;
-     margin-bottom: 12px;
- }
-
- .git {
-     font-size: 1.5rem;
- }
-
- .git a {
-     font-size: 1.5rem;
- }
-
- footer {
-     font-size: 1.5rem;
-     margin-top: 175px;
-     display: flex;
-     justify-content: space-around;
-     align-items: center;
-     height: 100px;
-     background-color: rgb(49, 15, 83);
- }
-
- html {
-     scroll-behavior: smooth;
- }
-
- nav {
-    position: fixed;
+nav {
+    position: fixed; /* Fixed navbar */
     top: 0;
     width: 100%;
     z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(69, 22, 117);
+    padding: 1rem 2rem;
+    transition: max-height 0.3s ease;
+    flex-wrap: wrap;
 }
+
+.left {
+    font-size: 2rem;
+}
+
+/* Hamburger styles */
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    gap: 6px;
+}
+
+.hamburger div {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+}
+
+/* Nav links container */
+.right {
+    display: flex;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+.nav-links li a:hover {
+    color: aqua;
+    font-size: 1.01rem;
+}
+
+/* Main page padding to avoid content hidden behind fixed navbar */
 main {
-    padding-top: 100px; 
+    padding-top: 100px; /* Adjust if navbar height changes */
+}
+
+.firstsection {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 80px 0;
+    flex-wrap: wrap;
+}
+
+.firstsection > div {
+    width: 30%;
+}
+
+.leftsection {
+    font-size: 1.3rem;
+}
+
+.leftsecabout {
+    font-size: 2rem;
+    height: 60px;
+}
+
+.rightsection img {
+    width: 80%;
+    margin: 50px 0;
+}
+
+.purple {
+    color: rgb(135, 75, 192);
+}
+
+.secondsection,
+.thirdsection,
+.fourthsection {
+    max-width: 80vw;
+    margin: auto;
+}
+
+.secondsection {
+    margin-bottom: 160px;
+}
+
+.thirdsection {
+    margin-bottom: 175px;
+}
+
+
+
+.skill,
+.pro,
+.contact {
+    font-size: 2rem;
+}
+
+.gap,
+.gap2,
+.gap3 {
+    margin-bottom: 15px;
+}
+
+.list,
+.project,
+.email,
+.mob,
+.git {
+    font-size: 1.3rem;
+}
+
+.project {
+    background: rgb(110, 0, 118);
+    color: white;
+    padding: 1rem;
+    border-left: 15px solid rgb(69, 22, 117);
+}
+
+.project a:link,
+.email a:link,
+.mob a:link,
+.git a:link {
+    color: aqua;
+}
+
+.project a:visited,
+.email a:visited,
+.mob a:visited,
+.git a:visited {
+    color: yellow;
+}
+
+.project a:hover,
+.email a:hover,
+.mob a:hover,
+.git a:hover {
+    color: rgb(215, 59, 176);
+}
+
+footer {
+    font-size: 1.2rem;
+    margin-top: 175px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100px;
+    background-color: rgb(49, 15, 83);
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* Responsive CSS */
+#menu-toggle {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        align-items: flex-start;
+        position: fixed; /* Keep fixed on mobile as well */
+        top: 0;
+    }
+
+    .hamburger {
+        display: flex;
+        position: absolute;
+        top: 30px;
+        right: 20px;
+        cursor: pointer;
+        z-index: 1100;
+    }
+
+    .right {
+        width: 100%;
+    }
+
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+        margin-top: 1rem;
+        gap: 1rem;
+        background-color: rgb(69, 22, 117);
+        padding: 1rem 0;
+        border-radius: 8px;
+    }
+
+    /* Show nav links when checkbox is checked */
+    #menu-toggle:checked ~ .right .nav-links {
+        display: flex;
+    }
+
+    .firstsection > div {
+        width: 80%;
+        text-align: center;
+    }
+
+    .rightsection img {
+        margin-top: 30px;
+        width: 90%;
+    }
+
+    /* Increase top padding on main to prevent content hidden behind navbar + hamburger */
+    main {
+        padding-top: 130px;
+    }
 }

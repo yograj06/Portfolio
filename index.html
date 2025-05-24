@@ -2,20 +2,28 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Yograj</title>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
-
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
     <header>
         <nav>
             <div class="left">Yograj's Portfolio</div>
+
+            <!-- Hamburger Menu Toggle -->
+            <input type="checkbox" id="menu-toggle" />
+            <label for="menu-toggle" class="hamburger">
+                <div></div>
+                <div></div>
+                <div></div>
+            </label>
+
             <div class="right">
-                <ul>
+                <ul class="nav-links">
                     <li><a href="#about">About</a></li>
                     <li><a href="#skills">Skills</a></li>
                     <li><a href="#projects">Projects</a></li>
@@ -30,21 +38,21 @@
             <div class="leftsection">
                 <div class="leftsecabout">
                     About Me
-                    <hr>
+                    <hr />
                 </div>
                 Hello! I am <span class="purple">Yograj Patel</span>, a passionate Computer Science student at Veer
                 Surendra Sia University of Technology Burla. I am interested in web
                 development, programming, and building creative tech solutions.
             </div>
             <div class="rightsection">
-                <img src="developer.png" alt="Developer illustration">
+                <img src="developer.png" alt="Developer illustration" />
             </div>
         </section>
 
         <section class="secondsection" id="skills">
             <div class="skill">
                 Skills
-                <hr class="gap">
+                <hr class="gap" />
                 <div class="list">
                     <ul>
                         <li>HTML & CSS</li>
@@ -60,13 +68,12 @@
         <section class="thirdsection" id="projects">
             <div class="pro">
                 Projects
-                <hr class="gap2">
+                <hr class="gap2" />
             </div>
             <div class="project">
                 <h3>Book Selling Landing Page <a href="https://campusshelf.vercel.app/" target="_blank">CampusShelf</a>
                 </h3>
-                <p>A static webpage created using HTML and CSS
-                    for showcasing and promoting books.</p>
+                <p>A static webpage created using HTML and CSS for showcasing and promoting books.</p>
                 <div class="git">
                     <a href="https://github.com/yograj06/Web_Dev_Task2.git" target="_blank">GitHub</a>
                 </div>
@@ -76,7 +83,7 @@
         <section class="fourthsection" id="contact">
             <div class="contact">
                 Contact Me
-                <hr class="gap3">
+                <hr class="gap3" />
             </div>
             <p class="email">Email : <a href="mailto:yograj240607@gmail.com">yograj240607@gmail.com</a></p>
             <p class="mob">Mob : <a href="tel:+917327997598">+91 7327997598</a></p>

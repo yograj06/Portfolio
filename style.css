@@ -11,7 +11,7 @@ body {
 }
 
 nav {
-    position: fixed; /* Fixed navbar */
+    position: fixed; 
     top: 0;
     width: 100%;
     z-index: 1000;
@@ -28,7 +28,6 @@ nav {
     font-size: 2rem;
 }
 
-/* Hamburger styles */
 .hamburger {
     display: none;
     flex-direction: column;
@@ -42,7 +41,6 @@ nav {
     background-color: white;
 }
 
-/* Nav links container */
 .right {
     display: flex;
 }
@@ -64,9 +62,8 @@ nav {
     font-size: 1.01rem;
 }
 
-/* Main page padding to avoid content hidden behind fixed navbar */
 main {
-    padding-top: 100px; /* Adjust if navbar height changes */
+    padding-top: 100px;
 }
 
 .firstsection {
@@ -83,6 +80,7 @@ main {
 
 .leftsection {
     font-size: 1.3rem;
+    margin-bottom: 120px;
 }
 
 .leftsecabout {
@@ -129,11 +127,20 @@ main {
 }
 
 .list,
-.project,
-.email,
+.project {
+     font-size: 1.3rem;
+}
+.email, 
 .mob,
 .git {
-    font-size: 1.3rem;
+    font-size: 1.16rem;
+}
+
+.email {
+    margin-bottom: 10px;
+}
+.mob {
+    margin-bottom: 10px;
 }
 
 .project {
@@ -165,7 +172,7 @@ main {
 }
 
 footer {
-    font-size: 1.2rem;
+    font-size: 1.16rem;
     margin-top: 175px;
     display: flex;
     justify-content: space-around;
@@ -178,7 +185,6 @@ html {
     scroll-behavior: smooth;
 }
 
-/* Responsive CSS */
 #menu-toggle {
     display: none;
 }
@@ -187,7 +193,7 @@ html {
     nav {
         flex-direction: column;
         align-items: flex-start;
-        position: fixed; /* Keep fixed on mobile as well */
+        position: fixed;
         top: 0;
     }
 
@@ -216,7 +222,7 @@ html {
         border-radius: 8px;
     }
 
-    /* Show nav links when checkbox is checked */
+   
     #menu-toggle:checked ~ .right .nav-links {
         display: flex;
     }
@@ -231,7 +237,6 @@ html {
         width: 90%;
     }
 
-    /* Increase top padding on main to prevent content hidden behind navbar + hamburger */
     main {
         padding-top: 130px;
     }

@@ -166,6 +166,18 @@ main {
 .linkedin {
     margin-top: 15px;
 }
+
+.email i,
+.mob i,
+.git i,
+.linkedin i {
+  margin-right: 10px;
+  color: aqua;
+  font-size: 1.2rem;
+  vertical-align: middle;
+}
+
+
 .project {
   background: rgb(110, 0, 118);
   color: white;

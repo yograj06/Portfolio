@@ -97,8 +97,8 @@ main {
   margin: 50px 0;
 }
 
-.purple {
-  color: rgb(135, 75, 192);
+.green {
+  color: rgb(3, 246, 108);
 }
 
 .secondsection,
@@ -151,18 +151,21 @@ main {
 .email,
 .mob,
 .git,
-.git2 {
-  font-size: 1.16rem;
+.git2,
+.linkedin {
+  font-size: 1.2rem;
 }
 
 .email {
-  margin-bottom: 10px;
+  margin-bottom: 15px;
 }
 
 .mob {
-  margin-bottom: 10px;
+  margin-bottom: 15px;
 }
-
+.linkedin {
+    margin-top: 15px;
+}
 .project {
   background: rgb(110, 0, 118);
   color: white;
@@ -186,7 +189,8 @@ main {
 .email a:link,
 .mob a:link,
 .git a:link,
-.git2 a:link {
+.git2 a:link,
+.linkedin a:link {
   color: aqua;
 }
 
@@ -196,7 +200,8 @@ main {
 .email a:visited,
 .mob a:visited,
 .git a:visited,
-.git2 a:visited {
+.git2 a:visited,
+.linkedin a:visited {
   color: yellow;
 }
 
@@ -205,12 +210,13 @@ main {
 .email a:hover,
 .mob a:hover,
 .git a:hover,
-.git a:hover {
+.git a:hover,
+.linkedin a:hover {
   color: rgb(215, 59, 176);
 }
 
 footer {
-  font-size: 1.16rem;
+  font-size: 1.12rem;
   height: 100px;
   background-color: rgb(49, 15, 83);
   margin-top: 80px;

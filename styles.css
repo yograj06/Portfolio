@@ -265,7 +265,7 @@ main {
 .git a:visited,
 .git2 a:visited,
 .linkedin a:visited {
-    color: yellow;
+    color:aqua;
 }
 
 .project a:hover,

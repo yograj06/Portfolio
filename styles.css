@@ -1,151 +1,152 @@
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 body {
-  height: 100%;
-  background-color: rgb(15, 0, 33);
-  color: white;
-  font-family: 'Poppins', sans-serif;
-  display: flex;
-  flex-direction: column;
+    height: 100%;
+    background-color: rgb(15, 0, 33);
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    flex-direction: column;
 }
 
 nav {
-  position: fixed;
-  top: 0;
-  width: 100%;
-  z-index: 1000;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-color: rgb(69, 22, 117);
-  padding: 1rem 2rem;
-  transition: max-height 0.3s ease;
-  flex-wrap: wrap;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(69, 22, 117);
+    padding: 1rem 2rem;
+    transition: max-height 0.3s ease;
+    flex-wrap: wrap;
 }
 
 .left {
-  font-size: 2rem;
+    font-size: 2rem;
 }
 
 .hamburger {
-  display: none;
-  flex-direction: column;
-  cursor: pointer;
-  gap: 6px;
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    gap: 6px;
 }
 
 .hamburger div {
-  width: 25px;
-  height: 3px;
-  background-color: white;
+    width: 25px;
+    height: 3px;
+    background-color: white;
 }
 
 .right {
-  display: flex;
+    display: flex;
 }
 
 .nav-links {
-  display: flex;
-  list-style: none;
-  gap: 20px;
+    display: flex;
+    list-style: none;
+    gap: 20px;
 }
 
 .nav-links li a {
-  text-decoration: none;
-  color: white;
-  font-weight: bold;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
 }
 
 .nav-links li a:hover {
-  color: aqua;
-  font-size: 1.01rem;
+    color: yellow;
+    font-size: 1.01rem;
 }
 
 main {
-  padding-top: 100px;
-  flex: 1;
+    padding-top: 100px;
+    flex: 1;
 }
 
 .firstsection {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  margin: 80px 0;
-  flex-wrap: wrap;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 80px 0;
+    flex-wrap: wrap;
 }
 
 .firstsection>div {
-  width: 30%;
+    width: 30%;
 }
 
 .leftsection {
-  font-size: 1.3rem;
-  margin-bottom: 120px;
+    font-size: 1.3rem;
+    margin-bottom: 120px;
 }
 
 .leftsecabout {
-  font-size: 2rem;
-  height: 60px;
+    font-size: 2rem;
+    height: 60px;
 }
 
 .rightsection img {
-  width: 80%;
-  margin: 50px 0;
+    width: 80%;
+    margin: 50px 0;
 }
 
 .green {
-  color: rgb(3, 246, 108);
+    color: rgb(3, 246, 108);
+    font-size: 1.5rem;
 }
 
 .secondsection,
 .thirdsection,
 .fourthsection {
-  max-width: 80vw;
-  margin: auto;
+    max-width: 80vw;
+    margin: auto;
 }
 
 .secondsection {
-  margin-bottom: 160px;
+    margin-bottom: 160px;
 }
 
 .thirdsection {
-  margin-bottom: 160px;
+    margin-bottom: 160px;
 }
 
 .fourthsection {
-  margin-top: 150px;
-  margin-bottom: 160px;
+    margin-top: 150px;
+    margin-bottom: 160px;
 }
 
 .skill,
 .pro,
 .contact {
-  font-size: 2rem;
+    font-size: 2rem;
 }
 
 .skill {
-  margin-top: 115px;
-  margin-bottom: 20px;
+    margin-top: 115px;
+    margin-bottom: 20px;
 }
 
 .pro {
-  margin-top: 50px;
+    margin-top: 50px;
 }
 
 .gap,
 .gap2,
 .gap3 {
-  margin-bottom: 20px;
+    margin-bottom: 20px;
 }
 
 .list,
 .project,
 .project2 {
-  font-size: 1.3rem;
+    font-size: 1.3rem;
 }
 
 .email,
@@ -153,16 +154,17 @@ main {
 .git,
 .git2,
 .linkedin {
-  font-size: 1.2rem;
+    font-size: 1.2rem;
 }
 
 .email {
-  margin-bottom: 15px;
+    margin-bottom: 15px;
 }
 
 .mob {
-  margin-bottom: 15px;
+    margin-bottom: 15px;
 }
+
 .linkedin {
     margin-top: 15px;
 }
@@ -171,29 +173,78 @@ main {
 .mob i,
 .git i,
 .linkedin i {
-  margin-right: 10px;
-  color: aqua;
-  font-size: 1.2rem;
-  vertical-align: middle;
+    margin-right: 10px;
+    color: aqua;
+    font-size: 1.2rem;
+    vertical-align: middle;
 }
 
+.email i:hover,
+.mob i:hover,
+.git i:hover,
+.linkedin i:hover {
+    margin-right: 10px;
+    color: yellow;
+    font-size: 1.5rem;
+    vertical-align: middle;
+}
+
+.email a,
+.mob a,
+.git a,
+.git2 a,
+.project a,
+.project2 a,
+.linkedin a {
+    position: relative;
+    text-decoration: none;
+    color: yellow;
+    transition: color 0.3s ease;
+}
+
+.email a::after,
+.mob a::after,
+.git a::after,
+.git2 a::after,
+.project a::after,
+.project2 a::after,
+.linkedin a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    width: 0%;
+    height: 2px;
+    background-color: yellow;
+    transition: width 0.3s ease;
+}
+
+.email a:hover::after,
+.mob a:hover::after,
+.git a:hover::after,
+.git2 a:hover::after,
+.project a:hover::after,
+.project2 a:hover::after,
+.linkedin a:hover::after {
+    width: 100%;
+}
 
 .project {
-  background: rgb(110, 0, 118);
-  color: white;
-  padding: 1rem;
-  border-left: 15px solid rgb(69, 22, 117);
-  border-radius: 10px;
+    background: rgb(110, 0, 118);
+    color: white;
+    padding: 1rem;
+    border-left: 15px solid rgb(69, 22, 117);
+    border-radius: 10px;
 
 }
 
 .project2 {
-  background: rgb(110, 0, 118);
-  color: white;
-  padding: 1rem;
-  border-left: 15px solid rgb(69, 22, 117);
-  margin-top: 1.5rem;
-  border-radius: 10px;
+    background: rgb(110, 0, 118);
+    color: white;
+    padding: 1rem;
+    border-left: 15px solid rgb(69, 22, 117);
+    margin-top: 1.5rem;
+    border-radius: 10px;
 }
 
 .project a:link,
@@ -203,7 +254,7 @@ main {
 .git a:link,
 .git2 a:link,
 .linkedin a:link {
-  color: aqua;
+    color: aqua;
 }
 
 
@@ -214,7 +265,7 @@ main {
 .git a:visited,
 .git2 a:visited,
 .linkedin a:visited {
-  color: yellow;
+    color: yellow;
 }
 
 .project a:hover,
@@ -224,81 +275,81 @@ main {
 .git a:hover,
 .git a:hover,
 .linkedin a:hover {
-  color: rgb(215, 59, 176);
+    color: yellow;
 }
 
 footer {
-  font-size: 1.12rem;
-  height: 100px;
-  background-color: rgb(49, 15, 83);
-  margin-top: 80px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 0 1rem;
+    font-size: 1.12rem;
+    height: 100px;
+    background-color: rgb(49, 15, 83);
+    margin-top: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 1rem;
 }
 
 html {
-  scroll-behavior: smooth;
-  height: 100%;
+    scroll-behavior: smooth;
+    height: 100%;
 }
 
 #menu-toggle {
-  display: none;
+    display: none;
 }
 
 @media (max-width: 768px) {
-  nav {
-    flex-direction: column;
-    align-items: flex-start;
-    position: fixed;
-    top: 0;
-  }
+    nav {
+        flex-direction: column;
+        align-items: flex-start;
+        position: fixed;
+        top: 0;
+    }
 
-  .hamburger {
-    display: flex;
-    position: absolute;
-    top: 30px;
-    right: 20px;
-    cursor: pointer;
-    z-index: 1100;
-  }
+    .hamburger {
+        display: flex;
+        position: absolute;
+        top: 30px;
+        right: 20px;
+        cursor: pointer;
+        z-index: 1100;
+    }
 
-  .right {
-    width: 100%;
-  }
+    .right {
+        width: 100%;
+    }
 
-  .nav-links {
-    display: none;
-    flex-direction: column;
-    width: 100%;
-    text-align: center;
-    margin-top: 1rem;
-    gap: 1rem;
-    background-color: rgb(69, 22, 117);
-    padding: 1rem 0;
-    border-radius: 8px;
-  }
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+        margin-top: 1rem;
+        gap: 1rem;
+        background-color: rgb(69, 22, 117);
+        padding: 1rem 0;
+        border-radius: 8px;
+    }
 
-  #menu-toggle:checked~.right .nav-links {
-    display: flex;
-  }
+    #menu-toggle:checked~.right .nav-links {
+        display: flex;
+    }
 
-  .firstsection>div {
-    width: 80%;
-    text-align: center;
-  }
+    .firstsection>div {
+        width: 80%;
+        text-align: center;
+    }
 
-  .rightsection img {
-    margin-top: 30px;
-    width: 90%;
-  }
+    .rightsection img {
+        margin-top: 30px;
+        width: 90%;
+    }
 
-  main {
-    padding-top: 130px;
-  }
+    main {
+        padding-top: 130px;
+    }
 }
 
 .nav-links li a.active {
-  color: aqua;
+    color: yellow;
 }

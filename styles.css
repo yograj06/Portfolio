@@ -151,7 +151,8 @@ main {
 
 .list,
 .project,
-.project2 {
+.project2,
+.project3 {
     font-size: 1.3rem;
 }
 
@@ -159,6 +160,7 @@ main {
 .mob,
 .git,
 .git2,
+.git3,
 .linkedin {
     font-size: 1.2rem;
 }
@@ -199,8 +201,10 @@ main {
 .mob a,
 .git a,
 .git2 a,
+.git3 a,
 .project a,
 .project2 a,
+.project3 a,
 .linkedin a {
     position: relative;
     text-decoration: none;
@@ -212,8 +216,10 @@ main {
 .mob a::after,
 .git a::after,
 .git2 a::after,
+.git3 a::after,
 .project a::after,
 .project2 a::after,
+.project3 a::after,
 .linkedin a::after {
     content: '';
     position: absolute;
@@ -229,8 +235,10 @@ main {
 .mob a:hover::after,
 .git a:hover::after,
 .git2 a:hover::after,
+.git3 a:hover::after,
 .project a:hover::after,
 .project2 a:hover::after,
+.project3 a:hover::after,
 .linkedin a:hover::after {
     width: 100%;
 }
@@ -262,13 +270,28 @@ main {
 .project2:hover {
     transform: translateY(-10px);
 }
+.project3 {
+    background: rgb(110, 0, 118);
+    color: white;
+    padding: 1rem;
+    border-left: 15px solid rgb(69, 22, 117);
+    margin-top: 1.5rem;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.project3:hover {
+    transform: translateY(-10px);
+}
 
 .project a:link,
 .project2 a:link,
+.project3 a:link,
 .email a:link,
 .mob a:link,
 .git a:link,
 .git2 a:link,
+.git3 a:link,
 .linkedin a:link {
     color: aqua;
 }
@@ -276,20 +299,24 @@ main {
 
 .project a:visited,
 .project2 a:visited,
+.project3 a:visited,
 .email a:visited,
 .mob a:visited,
 .git a:visited,
 .git2 a:visited,
+.git3 a:visited,
 .linkedin a:visited {
     color: aqua;
 }
 
 .project a:hover,
 .project2 a:hover,
+.project3 a:hover,
 .email a:hover,
 .mob a:hover,
 .git a:hover,
-.git a:hover,
+.git2 a:hover,
+.git3 a:hover,
 .linkedin a:hover {
     color: yellow;
 }

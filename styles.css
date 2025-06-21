@@ -310,7 +310,6 @@ main {
 .linkedin i:hover {
     margin-right: 10px;
     color: yellow;
-    font-size: 1.5rem;
     vertical-align: middle;
     transition: 0.3s;
 }
@@ -418,9 +417,17 @@ main {
 .project3 a:link,
 .email a:link,
 .mob a:link,
-.git a:link,
+.git1 a:link,
 .git2 a:link,
 .git3 a:link,
+.linkedin a:link {
+    color: rgb(68, 96, 188);
+}
+
+
+.email a:link,
+.mob a:link,
+.git a:link,
 .linkedin a:link {
     color: rgb(49, 49, 49);
 }
@@ -430,11 +437,18 @@ main {
 .project3 a:visited,
 .email a:visited,
 .mob a:visited,
-.git a:visited,
+.git1 a:visited,
 .git2 a:visited,
 .git3 a:visited,
 .linkedin a:visited {
-    color: rgb(49, 49, 49);
+    color: rgb(68, 96, 188);
+}
+
+.email a:visited,
+.mob a:visited,
+.git a:visited,
+.linkedin a:visited {
+    color: rgb(49, 49, 49);;
 }
 
 .project a:hover,
@@ -443,6 +457,7 @@ main {
 .email a:hover,
 .mob a:hover,
 .git a:hover,
+.git1 a:hover,
 .git2 a:hover,
 .git3 a:hover,
 .linkedin a:hover {
